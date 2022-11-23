@@ -1,0 +1,75 @@
+<nav class="navbar navbar-expand-lg ">
+  <div class="d-flex justify-content-center " style="width: 100%;"> 
+    <div class="d-flex justify-content-between align-items-center" style=" width: 95%;">
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand" href="#">
+          <img src="../../../assets/UaaFood.png" alt="" width="50" height="50">
+        </a>
+  
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cafeterias
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+  
+      </div>
+      <div>
+        <form class="" >
+          <div class="d-flex">
+            <input class="rounded me-2" type="search" placeholder="Busca que comer!" aria-label="Search">
+          <button class="btn " type="submit">Buscar</button>
+  
+          </div>
+        </form>
+  
+      </div>
+      <div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <button class="btn "  data-bs-target="#ModalForm" data-bs-toggle="modal">Login</button>
+          </li>
+  
+        </ul>
+  
+      </div>
+        
+    </div>
+  </div>
+  
+</nav>
+
+<!-- -----Login----- -->
+
+<div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+          <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="form-area " id="form">
+              <h1 class="text-center">Inicia Sesion</h1>
+              <form>
+                  <div class="mb-3 mt-4">
+                      <label for="exampleInputEmail1" class="form-label">Correo</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <button type="submit" class="btn btn-light mt-3">Iniciar Sesion</button>
+                  <p>Nuevo Usuario?    <a data-bs-dismiss="modal" [routerLink]="['/registro']">Registrate</a></p>
+              </form>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
